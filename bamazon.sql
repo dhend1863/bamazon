@@ -3,16 +3,16 @@ USE Bamazon;
 
 -- Create a table called 'products' which will contain the store inventory --
 CREATE TABLE products (
-	item_id INTEGER(11) AUTO_INCREMENT NOT NULL,
+	itemid INTEGER(11) AUTO_INCREMENT NOT NULL,
 	productName VARCHAR(30) NOT NULL,
-	departmentName VARCHAR(20) NOT NULL,
+	deartmentname VARCHAR(20) NOT NULL,
 	price DECIMAL(10,2) NOT NULL,
 	stockQuantity INTEGER(11) NOT NULL,
-	PRIMARY KEY (item_id)
+	PRIMARY KEY (itemid)
 );
 
 -- Insert data into the 'products' table --
-INSERT INTO products (product_name, department_name, price, stock_quantity)
+INSERT INTO products (productname, deartmentname, price, stockquantity)
 VALUES  ('Shampoo', 'Cosmetics', 5.75, 500),
 		('Conditioner', 'Cosmetics', 6.25, 627),
 		('Trash Bags', 'Grocery', 5.99, 300),
